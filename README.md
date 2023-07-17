@@ -1,2 +1,2 @@
 # api-app
-An exploration of APIs using vanilla Javscript
+This is a random Pokemon generator built using vanilla Javascript. I made this in order to learn how to fetch data from an API.
