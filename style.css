@@ -1,0 +1,25 @@
+td {
+  font-family: Noto Sans;
+}
+
+.wrapper {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  height: max-content;
+  margin: 0;
+  border: 4px solid tomato;
+  border-radius: 1rem;
+}
+
+td {  
+  padding: 1rem;
+}
+
+td:not(:first-child) {
+  border-left: 4px solid lightgray;
+}
