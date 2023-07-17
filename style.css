@@ -30,3 +30,8 @@ td {
 td:not(:first-child) {
   border-left: 4px solid lightgrey;
 }
+
+img {
+  width: 96px;
+  height: 96px;
+}
