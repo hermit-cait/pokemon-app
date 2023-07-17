@@ -1,2 +1,2 @@
 # api-app
-An exploration of APIs in the console
+An exploration of APIs using vanilla Javscript
