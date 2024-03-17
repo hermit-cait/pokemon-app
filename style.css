@@ -5,21 +5,14 @@ h1, td, p {
   font-weight: 300;
 }
 
-h1 {
-  text-align: center;
-  margin-block-start: 3rem;
-}
-
-table {  
-  width: 20rem;
-  height: 15rem;
-  background-color: white;
-  border-radius: 1rem;
-  padding: 1rem 3rem;
+h1 {  
+  visibility: hidden;
+  font-size: 0.9rem;
+  margin-block-start: 0;
 }
 
 td, p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 400;
   text-align: center;
 }
@@ -29,34 +22,72 @@ img {
   height: 96px;
 }
 
+.button {  
+  width: 12rem;
+  background-color: rgba(255,255,255,0.3);
+  margin: 0 auto;
+  margin-block-start: 3rem;
+  padding: 0 1rem;
+  border-radius: 1rem;
+  cursor: pointer;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover {  
+  background-color: rgba(255,255,255,0.5);
+}
+
+.generate {
+  font-size: 2rem;
+  margin-inline-start: 1rem;
+}
+
+.pokeball {
+  background-image: url(pokeball.svg);
+  height: 2rem;
+  width: 2rem;
+}
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.generate {  
-  width: max-content;
-  background-color: rgba(255,255,255,0.3);
-  margin: 0 auto;
-  margin-block-start: 0.5rem;
+table {  
+  width: 80vw;
+  background-color: white;
   border-radius: 1rem;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
+  padding: 1rem 3rem;
 }
 
-.generate:hover {
+@media (min-width: 500px) {
+
+  h1 {
+    visibility: visible;
+    font-size: 3rem;
+    text-align: center;
+    margin-block-start: 3rem;
+  }
+
+  td, p {
+    font-size: 1.2rem;
+  }  
   
-  background-color: rgba(255,255,255,0.5);
-}
+  table {
+    margin-block-start: 1rem;
+    width: 20rem
+  }
 
-.button {
-  background-image: url(pokeball.svg);
-  height: 3rem;
-  width: 3rem;
-  margin: 0 auto;
-  margin-block-start: 1rem;
-  cursor: pointer;
-  filter: greyscale(100%);
-  -webkit-filter: greyscale(100%);
+  .button {
+    padding: 0;
+  }
+
+  .generate {
+    font-size: 1.2rem;
+    margin-inline-start: 0.5rem;
+  }
+
 }
