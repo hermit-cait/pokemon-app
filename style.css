@@ -18,8 +18,8 @@ td, p {
 }
 
 img {
-  width: 96px;
-  height: 96px;
+  width: 250px;
+  height: 250px;
 }
 
 .button {  
@@ -33,6 +33,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  user-select: none;
 }
 
 .button:hover {  
@@ -79,6 +80,11 @@ table {
   table {
     margin-block-start: 1rem;
     width: 20rem
+  }
+
+  img {
+    width: 96px;
+    height: 96px;
   }
 
   .button {
