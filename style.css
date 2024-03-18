@@ -18,8 +18,8 @@ td, p {
 }
 
 img {
-  width: 250px;
-  height: 250px;
+  width: 96px;
+  height: 96px;
 }
 
 .button {  
@@ -80,11 +80,6 @@ table {
   table {
     margin-block-start: 1rem;
     width: 20rem
-  }
-
-  img {
-    width: 96px;
-    height: 96px;
   }
 
   .button {
