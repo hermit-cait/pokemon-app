@@ -3,7 +3,7 @@ getData();
 async function getData() {
   try {
     // Generates a URL for a random Pokemon from the first three generations
-    randomPokemon = Math.floor(Math.random() * 387);
+    randomPokemon = Math.floor(Math.random() * 387) + 1;
     randomURL = "https://pokeapi.co/api/v2/pokemon/"
     randomURL += randomPokemon;
     const response = await fetch(randomURL)
