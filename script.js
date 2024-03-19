@@ -61,6 +61,24 @@ async function getData() {
         };       
       };
       document.body.style.backgroundColor = selectedColour;
+      const button = document.getElementById("button");
+      if (selectedColour == "#e4ebf8" || selectedColour == "#d6d6ca") {
+        button.style.backgroundColor = "rgba(0,0,0,0.1)";
+        button.addEventListener("mouseover", function() {
+          button.style.backgroundColor = "rgba(0,0,0,0.2)";
+        });
+        button.addEventListener("mouseleave", function() {
+          button.style.backgroundColor = "rgba(0,0,0,0.1)";
+        });
+      } else {
+        button.style.backgroundColor = "rgba(255,255,255,0.3)";
+        button.addEventListener("mouseover", function() {
+          button.style.backgroundColor = "rgba(255,255,255,0.5)";
+        });
+        button.addEventListener("mouseleave", function() {
+          button.style.backgroundColor = "rgba(255,255,255,0.3)";
+        });
+      };
     };
     changeBackground(); 
       
@@ -71,4 +89,19 @@ async function getData() {
     template += "<td>404 ERROR NOT FOUND</td>";
     document.getElementById("data").innerHTML = template;
   };
+};
+
+const info = document.getElementById("info");
+const infoExpanded = document.getElementById("info-expanded");
+
+function getInfo() {  
+  if (infoExpanded.style.display == "none") {
+    infoExpanded.style.display = "block";
+  } else {
+    infoExpanded.style.display = "none";
+  };
+};
+
+function closeInfo() { 
+  infoExpanded.style.display = "none";
 };

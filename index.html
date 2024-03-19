@@ -13,10 +13,16 @@
         <tbody id="data"></tbody>
       </table>
     </div>   
-    <div onclick=getData() class="button">      
+    <div onclick=getData() class="button" id="button">      
       <div class="pokeball"></div>
       <p class="generate">generate</p>
     </div> 
+    <div onclick=getInfo() class="info" id="info" title="Click to read more"></div>
+    <div onclick=closeInfo() class="info-expanded" id="info-expanded" style="display: none">
+      <span class="close">x</span>
+      <p>this is an app that displays a randomly generated pokémon from one of the first three generations.</p><br><p>here you can see its name, type(s), height and weight. the background colour changes according to the pokémon's type.</p><br><p>click the "generate" button to view a different pokémon.</p>
+    </div>
+    <footer><p>website by <a href="https://hermit-cait.github.io/portfolio/">caitlin eybers</a></p></footer>
   </body>
   <script src="script.js"></script>
 </html>
