@@ -4,13 +4,12 @@
 body {
   margin: 0;
   padding: 0;
-  height: 98vh;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-h1, td, p, a, span {
+h1, td, p, span {
   font-family: "Nunito";
 }
 
@@ -24,19 +23,6 @@ td, p {
   font-size: 1.5rem;
   font-weight: 400;
   text-align: center;
-}
-
-footer p, footer a {
-  font-size: 1rem;
-  color: black;
-}
-
-a:visited {
-  color: black;
-}
-
-a:hover {
-  text-decoration: none;
 }
 
 img {
@@ -112,10 +98,6 @@ table {
   position: absolute;
   top: 1rem;
   right: 2rem;
-}
-
-footer {
-  margin-block-start: auto;
 }
 
 @media (min-width: 500px) {
